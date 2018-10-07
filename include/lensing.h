@@ -24,7 +24,9 @@ struct lensing {
   //@{
 
   short has_lensed_cls; /**< do we need to compute lensed \f$ C_l\f$'s at all ? */
-
+  
+  double A_L; /** Custom parameter: lensing fudge factor (see 0803.2309). */
+  
   //@}
 
   /** @name - information on number of type of C_l's (TT, TE...) */

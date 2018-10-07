@@ -596,7 +596,11 @@ int input_read_parameters(
       ppt->gauge = synchronous;
     }
   }
-
+  
+  
+  /** (0) Read in custom parameters. */
+  class_read_double("A_L",ple->A_L);
+  
   /** (a) background parameters */
 
   /** - scale factor today (arbitrary) */
@@ -3205,6 +3209,7 @@ int input_default_params(
   /** - lensing structure */
 
   ple->has_lensed_cls = _FALSE_;
+  ple->A_L = 1.0;
 
   /** - nonlinear structure */
 

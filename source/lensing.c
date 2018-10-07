@@ -1061,7 +1061,7 @@ int lensing_lensed_cl_tt(
     for (imu=0;imu<nmu;imu++) {
       cle += ksi[imu]*d00[imu][(int)ple->l[index_l]]*w8[imu]; /* loop could be optimized */
     }
-    ple->cl_lens[index_l*ple->lt_size+ple->index_lt_tt]=cle*2.0*_PI_;
+    ple->cl_lens[index_l*ple->lt_size+ple->index_lt_tt]=cle*2.0*_PI_*ple->A_L;
   }
 
   return _SUCCESS_;
