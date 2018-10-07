@@ -1,0 +1,31 @@
+HOW TO USE GIT
+Start up:
+    git init
+To upload changes you make:
+    git add .
+    git commit -m "Write what you changed here"
+    git push
+To download changes I make:
+    git pull
+To see what changes you've made since the most recent commit:
+    git status
+
+Branch stuff:
+To look at the available branches:
+    git branch
+To switch to a branch
+    git checkout BRANCH_NAME
+To create a new branch:
+    git checkout -b NEW_BRANCH_NAME
+
+
+
+
+
+
+
+
+
+
+Misc commands:
+python CPU.py output/test_cl.dat output/test_cl_lensed.dat -y TT
